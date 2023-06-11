@@ -7,7 +7,7 @@ type HangmanWordsProps = {
 const HangmanWords = ({guessedLetters, wordToGuess, isLoser}: HangmanWordsProps) => {
     return (
         <>
-            <div className="flex gap-1 text-8xl font-bold uppercase font-mono">
+            <div className="flex gap-1 text-5xl lg:text-8xl font-bold uppercase font-mono">
                 {wordToGuess.split("").map((letter, index) => (
                         <span key={index} className="border-b-8 border-black">
                         <span

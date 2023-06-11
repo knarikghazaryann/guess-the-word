@@ -8,7 +8,6 @@ type KeyboardProps = {
 }
 
 const Keyboard = ({activeLetters, inactiveLetters, addGuessedLetter, disabled = false}: KeyboardProps) => {
-    console.log({activeLetters, inactiveLetters})
     return (
         <div className="flex flex-wrap gap-0.5">
             {KEYS.map(key => {
